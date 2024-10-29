@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  server:
+    build: .
+    ports:
+      - "3000:3000"
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s  # Check every 30 seconds
+      timeout: 10s   # Wait 10 seconds for a response
+      retries: 3     # Restart after 3 consecutive failures
+      start_period: 5s  # Delay health checks for 5 seconds after container start

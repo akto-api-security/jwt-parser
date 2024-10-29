@@ -1,0 +1,23 @@
+{
+  "name": "jwt-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akto-api-security/jwt-parser.git"
+  },
+  "author": "shivansh@akto.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akto-api-security/jwt-parser/issues"
+  },
+  "homepage": "https://github.com/akto-api-security/jwt-parser#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
